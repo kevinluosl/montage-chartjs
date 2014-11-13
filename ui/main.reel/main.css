@@ -1,0 +1,13 @@
+.Main {
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+.barChart {
+    position: relative;
+    margin-left: 2em;
+    margin-right: 10em;
+    width: 100%;
+}
