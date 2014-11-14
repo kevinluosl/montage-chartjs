@@ -13,27 +13,6 @@ exports.BarChart = Component.specialize(/** @lends BarChart# */ {
         value: function BarChart() {
             this.super();
 
-//            var labels=["January", "February", "March", "April", "May", "June", "July"];
-//            var data= [
-//                {
-//                    label: "My First dataset",
-//                    fillColor: "rgba(220,220,220,0.5)",
-//                    strokeColor: "rgba(220,220,220,0.8)",
-//                    highlightFill: "rgba(220,220,220,0.75)",
-//                    highlightStroke: "rgba(220,220,220,1)",
-//                    data: [65, 59, 80, 81, 56, 55, 40]
-//                },
-//                {
-//                    label: "My Second dataset",
-//                    fillColor: "rgba(151,187,205,0.5)",
-//                    strokeColor: "rgba(151,187,205,0.8)",
-//                    highlightFill: "rgba(151,187,205,0.75)",
-//                    highlightStroke: "rgba(151,187,205,1)",
-//                    data: [28, 48, 40, 19, 86, 27, 90]
-//                }
-//            ];
-//            this.labels=labels;
-//            this.datasets=data;
         }
     },
     chartContext: {
@@ -60,8 +39,10 @@ exports.BarChart = Component.specialize(/** @lends BarChart# */ {
             this.chartContext = this.element.getContext("2d");
             this.drawChart();
 
-            this.addPathChangeListener('labels', this, 'updateChart');
-            this.addPathChangeListener('datasets', this, 'updateChart');
+//            this.addPathChangeListener('labels', this, 'updateChart');
+//            this.addPathChangeListener('datasets', this, 'updateChart');
+            this.addRangeAtPathChangeListener('labels', this, 'updateChart');
+            this.addRangeAtPathChangeListener('datasets', this, 'updateChart');
         }
     },
     options: {
@@ -122,6 +103,7 @@ exports.BarChart = Component.specialize(/** @lends BarChart# */ {
         value: function () {
             if (this.chartContext == null) return;
             this.allData = this.getDatasets();
+            if (this.allData==null || this.allData=='undefined') return;
             this.chart = new Chart(this.chartContext).Bar(this.allData, this.options);
         }
     }

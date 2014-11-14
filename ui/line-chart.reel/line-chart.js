@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-var Moment = require("node_modules/moment/moment").Moment;
+//var Moment = require("node_modules/moment/moment").Moment;
 /**
  * @class LineChart
  * @extends Component
@@ -20,56 +20,64 @@ exports.LineChart = Component.specialize( /** @lends LineChart# */ {
     },
 
     height: {
-        value: 600
+        value: 300
     },
 
     width: {
-        value: 800
+        value: 600
     },
 
-    data: {
-        value: []
+//    data: {
+//        value: []
+//    },
+//    label: {
+//        value: "label"
+//    },
+//
+//    labelFormat: {
+//        value: null
+//    },
+    labels: {
+      value:null
+    },
+    datasets:{
+        value:null
+    },
+    allData:{
+        value:null
     },
 
-    label: {
-        value: "label"
-    },
-
-    labelFormat: {
-        value: null
-    },
-
-    fields: {
-        value: []
-    },
-
-    colors: {
-        value: [{
-            //GREEN
-            strokeColor: "#69cca9",
-            pointStrokeColor: "#69cca9",
-            pointColor: "#69cca9",
-            fillColor: "rgba(181,231,213,0.4)"
-        }, {
-            //BLUE
-            strokeColor: "#5f89c7",
-            pointStrokeColor: "#5f89c7",
-            pointColor: "#5f89c7",
-            fillColor: "rgba(169,193,227,0.4)"
-        }, {
-            //VIOLET
-            strokeColor: "#8568ca",
-            pointStrokeColor: "#8568ca",
-            pointColor: "#8568ca",
-            fillColor: "rgba(193,178,230,0.4)"
-        }, {
-            //BROWN
-            strokeColor: "#77312a",
-            pointStrokeColor: "#77312a",
-            pointColor: "#77312a",
-            fillColor: "rgba(216,143,136,0.4)"
-        }]
-    },
+//    fields: {
+//        value: []
+//    },
+//
+//    colors: {
+//        value: [{
+//            //GREEN
+//            strokeColor: "#69cca9",
+//            pointStrokeColor: "#69cca9",
+//            pointColor: "#69cca9",
+//            fillColor: "rgba(181,231,213,0.4)"
+//        }, {
+//            //BLUE
+//            strokeColor: "#5f89c7",
+//            pointStrokeColor: "#5f89c7",
+//            pointColor: "#5f89c7",
+//            fillColor: "rgba(169,193,227,0.4)"
+//        }, {
+//            //VIOLET
+//            strokeColor: "#8568ca",
+//            pointStrokeColor: "#8568ca",
+//            pointColor: "#8568ca",
+//            fillColor: "rgba(193,178,230,0.4)"
+//        }, {
+//            //BROWN
+//            strokeColor: "#77312a",
+//            pointStrokeColor: "#77312a",
+//            pointColor: "#77312a",
+//            fillColor: "rgba(216,143,136,0.4)"
+//        }]
+//    },
 
     options: {
         value: {
@@ -133,11 +141,14 @@ exports.LineChart = Component.specialize( /** @lends LineChart# */ {
 
             this.initChart();
 
-            this.addPathChangeListener('label', this, 'updateChart');
-            this.addPathChangeListener('fields', this, 'updateChart');
-            this.addRangeAtPathChangeListener('fields', this, 'updateChart');
-            this.addPathChangeListener('data', this, 'updateChart');
-            this.addRangeAtPathChangeListener('data', this, 'updateChart');
+//            this.addPathChangeListener('label', this, 'updateChart');
+//            this.addPathChangeListener('fields', this, 'updateChart');
+//            this.addRangeAtPathChangeListener('fields', this, 'updateChart');
+//            this.addPathChangeListener('data', this, 'updateChart');
+//            this.addRangeAtPathChangeListener('data', this, 'updateChart');
+
+            this.addRangeAtPathChangeListener('labels', this, 'updateChart');
+            this.addRangeAtPathChangeListener('datasets', this, 'updateChart');
         }
     },
 
@@ -149,51 +160,59 @@ exports.LineChart = Component.specialize( /** @lends LineChart# */ {
 
     initChart: {
         value: function(){
-            this.chartData = {};
+            if (this.chartContext==null) return ;
+            this.chartData = {labels:[],datasets:[]};
             this.chartData.labels = this.getLabels();
             this.chartData.datasets = this.getDatasets();
-
+            if (this.chartData.labels==null || this.chartData.labels=='undefined')
+            {
+                return;
+            }
+            if (this.chartData==null || this.chartData=='undefined') return;
             this.chart = new Chart(this.chartContext).Line(this.chartData, this.options);
         }
     },
 
     getLabels: {
         value: function() {
-            var self = this;
-
-            return self.data.map(function(elt) {
-                if (self.labelFormat === null){
-                    return elt[self.label];
-                } else {
-                    return new Moment(elt[self.label]).format(self.labelFormat);
-                }
-            });
+            return this.labels;
+//            var self = this;
+//
+//            return self.data.map(function(elt) {
+//                return elt[self.label];
+////                if (self.labelFormat === null){
+////                    return elt[self.label];
+////                } else {
+////                    return new Moment(elt[self.label]).format(self.labelFormat);
+////                }
+//            });
         }
     },
 
     getDatasets: {
         value: function() {
-            var self = this;
-
-            // Build datasets :
-            var datasets = [];
-
-            for (var i = 0; i < self.fields.length; i++) {
-                var dataset = {
-                    label: self.fields[i],
-                    fillColor: self.colors[i].fillColor,
-                    strokeColor: self.colors[i].strokeColor,
-                    pointColor: self.colors[i].pointColor,
-                    pointStrokeColor: self.colors[i].pointStrokeColor,
-                    data: self.data.map(function(elt) {
-                        return elt[self.fields[i]]
-                    })
-                };
-
-                datasets.push(dataset);
-            }
-
-            return datasets;
+            return this.datasets;
+//            var self = this;
+//
+//            // Build datasets :
+//            var datasets = [];
+//
+//            for (var i = 0; i < self.fields.length; i++) {
+//                var dataset = {
+//                    label: self.fields[i],
+//                    fillColor: self.colors[i].fillColor,
+//                    strokeColor: self.colors[i].strokeColor,
+//                    pointColor: self.colors[i].pointColor,
+//                    pointStrokeColor: self.colors[i].pointStrokeColor,
+//                    data: self.data.map(function(elt) {
+//                        return elt[self.fields[i]]
+//                    })
+//                };
+//
+//                datasets.push(dataset);
+//            }
+//
+//            return datasets;
         }
     },
 

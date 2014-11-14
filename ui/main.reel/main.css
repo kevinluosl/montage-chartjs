@@ -6,8 +6,31 @@ h1,h2 {
 }
 
 .barChart {
-    position: relative;
-    margin-left: 2em;
-    margin-right: 10em;
+    margin-left: 1em;
+    padding-right: 10em;
+    width: 100%;
+}
+
+.lineChart {
+    margin-left: 1em;
+    padding-right: 10em;
+    width: 100%;
+}
+
+.radarChart {
+    margin-left: 1em;
+    padding-right: 10em;
+    width: 100%;
+}
+
+.pieChart {
+    margin-left: 1em;
+    padding-right: 10em;
+    width: 100%;
+}
+
+.polarChart {
+    margin-left: 1em;
+    padding-right: 10em;
     width: 100%;
 }
