@@ -1,0 +1,1 @@
+montageDefine("a09ddb3","tests/01-events",{dependencies:["./test-helper.js"],factory:function(t,e){var n=t("./test-helper.js");e.dir="Events",e.test=function(t,e){n.writeToParser(n.getEventCollector(e),t.options.parser,t.html)}}});

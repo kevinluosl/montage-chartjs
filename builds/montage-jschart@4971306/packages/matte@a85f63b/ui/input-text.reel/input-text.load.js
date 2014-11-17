@@ -1,0 +1,1 @@
+montageDefine("a85f63b","ui/input-text.reel/input-text",{dependencies:["montage/ui/base/abstract-text-field"],factory:function(t,e){var n=t("montage/ui/base/abstract-text-field").AbstractTextField;e.InputText=n.specialize({hasTemplate:{value:!0},constructor:{value:function(){this.super(),this.classList.add("matte-InputText")}}})}});

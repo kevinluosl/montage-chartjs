@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require( "montage/ui/component" ).Component;
-//var Moment = require("node_modules/moment/moment").Moment;
+var Chart = require( "../../chartjs/chart.min" );
 /**
  * @class LineChart
  * @extends Component
@@ -117,7 +117,7 @@ exports.LineChart = Component.specialize( /** @lends LineChart# */ {
 			this.chartData.labels = this.getLabels();
 			this.chartData.datasets = this.getDatasets();
 			if ( this.chartData.labels == null || this.chartData.labels == 'undefined' ) {
-					return;
+				return;
 			}
 			if ( this.chartData == null || this.chartData == 'undefined' ) return;
 			this.chart = new Chart( this.chartContext ).Line( this.chartData, this.options );

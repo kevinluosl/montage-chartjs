@@ -1,0 +1,1 @@
+montageDefine("fa0a895","index",{dependencies:["./lib"],factory:function(e,t,n){n.exports=e("./lib")}});

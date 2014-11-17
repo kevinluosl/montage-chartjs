@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Main</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <script type="text/montage-serialization">{"owner":{"properties":{"element":{"#":"main"}}},"barChart":{"prototype":"ui/bar-chart.reel","properties":{"element":{"#":"barChart"}},"bindings":{"labels":{"<-":"@owner.barLabels"},"datasets":{"<-":"@owner.barDatasets"}}},"lineChart":{"prototype":"ui/line-chart.reel","properties":{"element":{"#":"lineChart"}},"bindings":{"labels":{"<-":"@owner.lineLabels"},"datasets":{"<-":"@owner.lineDatasets"}}},"radarChart":{"prototype":"ui/radar-chart.reel","properties":{"element":{"#":"radarChart"}},"bindings":{"labels":{"<-":"@owner.radarLabels"},"datasets":{"<-":"@owner.radarDatasets"}}},"pieChart":{"prototype":"ui/pie-chart.reel","properties":{"element":{"#":"pieChart"}},"bindings":{"pieOrDoughnut":{"<-":"false"},"datasets":{"<-":"@owner.pieDatasets"}}},"doughnutChart":{"prototype":"ui/pie-chart.reel","properties":{"element":{"#":"doughnutChart"}},"bindings":{"pieOrDoughnut":{"<-":"true"},"datasets":{"<-":"@owner.pieDatasets"}}},"polarChart":{"prototype":"ui/polar-chart.reel","properties":{"element":{"#":"polarChart"}},"bindings":{"datasets":{"<-":"@owner.polarDatasets"}}}}</script>
+</head>
+<body>
+<div data-montage-id="main" data-montage-skin="light" class="Main">
+    <h1>Welcome to Montage-Chart.js demo</h1>
+
+    <h2>This demo include 5 chart components that are created base on chart.js, all support data-binding</h2>
+
+    <h2>Bar Chart example</h2>
+
+    <div class="Main-chartContainer">
+        <div data-montage-id="barChart">
+
+        </div>
+
+    </div>
+
+
+    <h2>Line Chart example</h2>
+
+    <div class="Main-chartContainer">
+        <div data-montage-id="lineChart">
+
+        </div>
+    </div>
+    <h2>Radar Chart example</h2>
+
+    <div class="Main-chartContainer">
+        <div data-montage-id="radarChart">
+
+        </div>
+    </div>
+
+    <h2>Pie Chart example</h2>
+
+    <div class="Main-chartContainer">
+        <div data-montage-id="pieChart">
+
+        </div>
+    </div>
+
+    <h2>Doughnut Chart example</h2>
+
+    <div class="Main-chartContainer">
+        <div data-montage-id="doughnutChart">
+
+        </div>
+    </div>
+
+    <h2>Polar Chart example</h2>
+
+    <div class="Main-chartContainer">
+        <div data-montage-id="polarChart">
+
+        </div>
+    </div>
+
+</div>
+
+
+</body></html>

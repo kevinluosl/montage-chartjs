@@ -1,0 +1,1 @@
+montageDefine("a85f63b","ui/input-date.reel/input-date",{dependencies:["native/ui/input-date.reel"],factory:function(t,e){var n=t("native/ui/input-date.reel").InputDate;e.InputDate=n.specialize({hasTemplate:{value:!0},constructor:{value:function(){this.super(),this.classList.add("matte-InputDate"),this.classList.add("matte-InputText")}}})}});

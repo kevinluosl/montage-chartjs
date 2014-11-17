@@ -1,0 +1,1 @@
+montageDefine("5ed7eac","ui/number-field.reel/number-field",{dependencies:["montage/ui/base/abstract-number-field"],factory:function(t,e){var i=t("montage/ui/base/abstract-number-field").AbstractNumberField;e.NumberField=i.specialize({constructor:{value:function(){this.super()}}})}});
