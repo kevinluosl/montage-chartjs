@@ -128,7 +128,7 @@ exports.RadarChart = Component.specialize( /** @lends RadarChart# */ {
 		value: function() {
 			if ( this.chartContext == null ) return;
 			this.allData = this.getDatasets();
-			if ( this.allData == null || this.allData == 'undefined' ) return;
+			if ( !this.allData.labels || !this.allData.datasets ) return;
 			this.chart = new Chart( this.chartContext ).Radar( this.allData, this.options );
 		}
 	}

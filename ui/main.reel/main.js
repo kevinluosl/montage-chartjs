@@ -176,8 +176,6 @@ exports.Main = Component.specialize( /** @lends Main# */ {
 
 			];
 
-			this.templateObjects.barChart.options.barShowStroke = false;
-
 		}
 	}
 } );

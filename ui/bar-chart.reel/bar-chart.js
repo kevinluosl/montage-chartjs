@@ -33,8 +33,8 @@ exports.BarChart = Component.specialize( /** @lends BarChart# */ {
 	barShowStroke: {
 		set: function( val ) {
 			this._barShowStroke = val;
-
 			this.options.barShowStroke = val;
+
 		},
 
 		get: function() {
@@ -54,6 +54,7 @@ exports.BarChart = Component.specialize( /** @lends BarChart# */ {
 
 			this.addRangeAtPathChangeListener( 'labels', this, 'updateChart' );
 			this.addRangeAtPathChangeListener( 'datasets', this, 'updateChart' );
+			this.addRangeAtPathChangeListener( 'barShowStroke', this, 'updateChart' );
 		}
 	},
 	options: {
@@ -88,7 +89,9 @@ exports.BarChart = Component.specialize( /** @lends BarChart# */ {
 	},
 	updateChart: {
 		value: function() {
-			this.chart.destroy();
+			if ( this.chart != null ) {
+				this.chart.destroy();
+			}
 			this.drawChart();
 		}
 	},
@@ -114,7 +117,7 @@ exports.BarChart = Component.specialize( /** @lends BarChart# */ {
 		value: function() {
 			if ( this.chartContext == null ) return;
 			this.allData = this.getDatasets();
-			if ( this.allData == null || this.allData == 'undefined' ) return;
+			if ( !this.allData.labels || !this.allData.datasets ) return;
 			this.chart = new Chart( this.chartContext ).Bar( this.allData, this.options );
 		}
 	}
