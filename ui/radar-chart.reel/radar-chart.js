@@ -37,8 +37,6 @@ exports.RadarChart = Component.specialize(/** @lends RadarChart# */ {
             this.chartContext = this.element.getContext("2d");
             this.drawChart();
 
-//            this.addPathChangeListener('labels', this, 'updateChart');
-//            this.addPathChangeListener('datasets', this, 'updateChart');
             this.addRangeAtPathChangeListener('labels', this, 'updateChart');
             this.addRangeAtPathChangeListener('datasets', this, 'updateChart');
         }
