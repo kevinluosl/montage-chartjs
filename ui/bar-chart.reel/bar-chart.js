@@ -2,111 +2,123 @@
  * @module ui/bar-chart.reel
  * @requires montage/ui/component
  */
-var Component = require("montage/ui/component").Component;
+var Component = require( "montage/ui/component" ).Component;
 
 /**
  * @class BarChart
  * @extends Component
  */
-exports.BarChart = Component.specialize(/** @lends BarChart# */ {
-    constructor: {
-        value: function BarChart() {
-            this.super();
+exports.BarChart = Component.specialize( /** @lends BarChart# */ {
+	constructor: {
+		value: function BarChart() {
+			this.super();
 
-        }
-    },
-    chartContext: {
-        value: null
-    },
-    chart: {
-        value: null
-    },
+		}
+	},
+	chartContext: {
+		value: null
+	},
+	chart: {
+		value: null
+	},
 
-    height: {
-        value: 400
-    },
+	height: {
+		value: 400
+	},
 
-    width: {
-        value: 600
-    },
-    enterDocument: {
-        value: function (firstTime) {
-            this.super(firstTime);
+	width: {
+		value: 600
+	},
 
-            Chart.defaults.global.responsive = true;
-            Chart.defaults.global.maintainAspectRatio = true;
+	barShowStroke: {
+		set: function( val ) {
+			this._barShowStroke = val;
+			this.options.barShowStroke = val;
 
-            this.chartContext = this.element.getContext("2d");
-            this.drawChart();
+		},
 
+		get: function() {
+			return this._barShowStroke;
+		}
+	},
 
-            this.addRangeAtPathChangeListener('labels', this, 'updateChart');
-            this.addRangeAtPathChangeListener('datasets', this, 'updateChart');
-        }
-    },
-    options: {
-        value: {
-            //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-            scaleBeginAtZero: true,
+	enterDocument: {
+		value: function( firstTime ) {
+			this.super( firstTime );
 
-            //Boolean - Whether grid lines are shown across the chart
-            scaleShowGridLines: true,
+			Chart.defaults.global.responsive = true;
+			Chart.defaults.global.maintainAspectRatio = true;
 
-            //String - Colour of the grid lines
-            scaleGridLineColor: "rgba(0,0,0,.05)",
+			this.chartContext = this.element.getContext( "2d" );
+			this.drawChart();
 
-            //Number - Width of the grid lines
-            scaleGridLineWidth: 1,
+			this.addRangeAtPathChangeListener( 'labels', this, 'updateChart' );
+			this.addRangeAtPathChangeListener( 'datasets', this, 'updateChart' );
+			this.addRangeAtPathChangeListener( 'barShowStroke', this, 'updateChart' );
+		}
+	},
+	options: {
+		value: {
+			//Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+			scaleBeginAtZero: true,
 
-            //Boolean - If there is a stroke on each bar
-            barShowStroke: true,
+			//Boolean - Whether grid lines are shown across the chart
+			scaleShowGridLines: true,
 
-            //Number - Pixel width of the bar stroke
-            barStrokeWidth: 2,
+			//String - Colour of the grid lines
+			scaleGridLineColor: "rgba(0,0,0,.05)",
 
-            //Number - Spacing between each of the X value sets
-            barValueSpacing: 5,
+			//Number - Width of the grid lines
+			scaleGridLineWidth: 1,
 
-            //Number - Spacing between data sets within X values
-            barDatasetSpacing: 1,
+			//Boolean - If there is a stroke on each bar
+			barShowStroke: true,
 
-            //String - A legend template
-            legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
-        }
-    },
-    updateChart: {
-        value: function () {
-            this.chart.destroy();
-            this.drawChart();
-        }
-    },
-    labels: {
-        value: null
-    },
-    datasets: {
-        value: null
-    },
-    allData: {
-        value: null
-    },
-    getDatasets: {
-        value: function () {
+			//Number - Pixel width of the bar stroke
+			barStrokeWidth: 2,
 
-            var dataset = {labels: [], datasets: []};
-            dataset.labels = this.labels;
-            dataset.datasets = this.datasets;
-            return dataset;
-        }
-    },
-    drawChart: {
-        value: function () {
-            if (this.chartContext == null) return;
-            this.allData = this.getDatasets();
-            if (!this.allData.labels == null || !this.allData.datasets) return;
-            if (!this.chart)
-                this.chart = new Chart(this.chartContext).Bar(this.allData, this.options);
-            else
-                this.chart.update();
-        }
-    }
-});
+			//Number - Spacing between each of the X value sets
+			barValueSpacing: 5,
+
+			//Number - Spacing between data sets within X values
+			barDatasetSpacing: 1,
+
+			//String - A legend template
+			legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+		}
+	},
+	updateChart: {
+		value: function() {
+			if ( this.chart != null ) {
+				this.chart.destroy();
+			}
+			this.drawChart();
+		}
+	},
+	labels: {
+		value: null
+	},
+	datasets: {
+		value: null
+	},
+	allData: {
+		value: null
+	},
+	getDatasets: {
+		value: function() {
+
+			var dataset = {labels: [], datasets: []};
+			dataset.labels = this.labels;
+			dataset.datasets = this.datasets;
+			return dataset;
+		}
+	},
+	drawChart: {
+		value: function() {
+			if ( this.chartContext == null ) return;
+			this.allData = this.getDatasets();
+			if ( !this.allData.labels || !this.allData.datasets ) return;
+			this.chart = new Chart( this.chartContext ).Bar( this.allData, this.options );
+		}
+	}
+} );
