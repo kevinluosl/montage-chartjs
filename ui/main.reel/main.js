@@ -14,32 +14,32 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.super();
         }
     },
-    lineLabels:{
-        value:null
+    lineLabels: {
+        value: null
     },
-    lineDatasets:{
-        value:null
+    lineDatasets: {
+        value: null
     },
-    barLabels:{
-        value:null
+    barLabels: {
+        value: null
     },
-    barDatasets:{
-        value:null
+    barDatasets: {
+        value: null
     },
-    radarLabels:{
-        value:null
+    radarLabels: {
+        value: null
     },
-    radarDatasets:{
-        value:null
+    radarDatasets: {
+        value: null
     },
-    pieDatasets:{
-        value:null
+    pieDatasets: {
+        value: null
     },
-    polarDatasets:{
-       value:null
+    polarDatasets: {
+        value: null
     },
-    templateDidLoad:{
-        value:function(){
+    templateDidLoad: {
+        value: function () {
             this.barLabels = ["January", "February", "March", "April", "May", "June", "July"];
             this.barDatasets = [
                 {
@@ -56,12 +56,12 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                     strokeColor: "rgba(151,187,205,0.8)",
                     highlightFill: "rgba(151,187,205,0.75)",
                     highlightStroke: "rgba(151,187,205,1)",
-                    data: [28, 48, 40, 19, 86, 27,96]
+                    data: [28, 48, 40, 19, 86, 27, 96]
                 }
             ];
 
-            this.lineLabels=this.barLabels;
-            this.lineDatasets=[
+            this.lineLabels = this.barLabels;
+            this.lineDatasets = [
                 {
                     label: "My First dataset",
                     fillColor: "rgba(220,220,220,0.2)",
@@ -84,8 +84,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 }
             ];
 
-            this.radarLabels=["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"];
-            this.radarDatasets=[
+            this.radarLabels = ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"];
+            this.radarDatasets = [
                 {
                     label: "My First dataset",
                     fillColor: "rgba(220,220,220,0.2)",
@@ -108,10 +108,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 }
             ];
 
-            this.pieDatasets=[
+            this.pieDatasets = [
                 {
                     value: 300,
-                    color:"#F7464A",
+                    color: "#F7464A",
                     highlight: "#FF5A5E",
                     label: "Red"
                 },
@@ -142,10 +142,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
             ];
 
-            this.polarDatasets=[
+            this.polarDatasets = [
                 {
                     value: 300,
-                    color:"#F7464A",
+                    color: "#F7464A",
                     highlight: "#FF5A5E",
                     label: "Red"
                 },
@@ -175,7 +175,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 }
 
             ];
-            this.templateObjects.barChart.options.barShowStroke=false;
+            this.templateObjects.barChart.options.barShowStroke = false;
 //            this.templateObjects.barChart.labels=labels;
 //            this.templateObjects.barChart.datasets=datasets;
 //

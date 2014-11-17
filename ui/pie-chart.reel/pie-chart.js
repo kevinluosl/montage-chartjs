@@ -27,8 +27,8 @@ exports.PieChart = Component.specialize(/** @lends PieChart# */ {
     width: {
         value: 600
     },
-    pieOrDoughnut:{
-        value:false
+    pieOrDoughnut: {
+        value: false
     },
     enterDocument: {
         value: function (firstTime) {
@@ -46,46 +46,46 @@ exports.PieChart = Component.specialize(/** @lends PieChart# */ {
     options: {
         value: {
             //Boolean - Whether we should show a stroke on each segment
-            segmentShowStroke : true,
+            segmentShowStroke: true,
 
             //String - The colour of each segment stroke
-            segmentStrokeColor : "#fff",
+            segmentStrokeColor: "#fff",
 
             //Number - The width of each segment stroke
-            segmentStrokeWidth : 2,
+            segmentStrokeWidth: 2,
 
             //Number - The percentage of the chart that we cut out of the middle
-            percentageInnerCutout : 0, // This is 0 for Pie charts
+            percentageInnerCutout: 0, // This is 0 for Pie charts
 
             //Number - Amount of animation steps
-            animationSteps : 100,
+            animationSteps: 100,
 
             //String - Animation easing effect
-            animationEasing : "easeOutBounce",
+            animationEasing: "easeOutBounce",
 
             //Boolean - Whether we animate the rotation of the Doughnut
-            animateRotate : true,
+            animateRotate: true,
 
             //Boolean - Whether we animate scaling the Doughnut from the centre
-            animateScale : false,
+            animateScale: false,
 
             //String - A legend template
-            legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+            legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
         }
     },
-    updateChart:{
-        value:function(){
-            if (this.chart!=null) {
+    updateChart: {
+        value: function () {
+            if (this.chart != null) {
                 this.chart.destroy();
             }
             this.drawChart();
         }
     },
-    datasets:{
-        value:null
+    datasets: {
+        value: null
     },
     allData: {
-        value:null
+        value: null
     },
     getDatasets: {
         value: function () {
@@ -96,14 +96,12 @@ exports.PieChart = Component.specialize(/** @lends PieChart# */ {
         value: function () {
             if (this.chartContext == null) return;
             this.allData = this.getDatasets();
-            if (this.allData==null || this.allData=='undefined') return;
-            if (this.pieOrDoughnut)
-            {
-                this.options.percentageInnerCutout=50;
+            if (this.allData == null || this.allData == 'undefined') return;
+            if (this.pieOrDoughnut) {
+                this.options.percentageInnerCutout = 50;
             }
-            else
-            {
-                this.options.percentageInnerCutout=0;
+            else {
+                this.options.percentageInnerCutout = 0;
             }
             this.chart = new Chart(this.chartContext).Pie(this.allData, this.options);
         }

@@ -43,62 +43,62 @@ exports.PolarChart = Component.specialize(/** @lends PolarChart# */ {
     options: {
         value: {
             //Boolean - Show a backdrop to the scale label
-            scaleShowLabelBackdrop : true,
+            scaleShowLabelBackdrop: true,
 
             //String - The colour of the label backdrop
-            scaleBackdropColor : "rgba(255,255,255,0.75)",
+            scaleBackdropColor: "rgba(255,255,255,0.75)",
 
             // Boolean - Whether the scale should begin at zero
-            scaleBeginAtZero : true,
+            scaleBeginAtZero: true,
 
             //Number - The backdrop padding above & below the label in pixels
-            scaleBackdropPaddingY : 2,
+            scaleBackdropPaddingY: 2,
 
             //Number - The backdrop padding to the side of the label in pixels
-            scaleBackdropPaddingX : 2,
+            scaleBackdropPaddingX: 2,
 
             //Boolean - Show line for each value in the scale
-            scaleShowLine : true,
+            scaleShowLine: true,
 
             //Boolean - Stroke a line around each segment in the chart
-            segmentShowStroke : true,
+            segmentShowStroke: true,
 
             //String - The colour of the stroke on each segement.
-            segmentStrokeColor : "#fff",
+            segmentStrokeColor: "#fff",
 
             //Number - The width of the stroke value in pixels
-            segmentStrokeWidth : 2,
+            segmentStrokeWidth: 2,
 
             //Number - Amount of animation steps
-            animationSteps : 100,
+            animationSteps: 100,
 
             //String - Animation easing effect.
-            animationEasing : "easeOutBounce",
+            animationEasing: "easeOutBounce",
 
             //Boolean - Whether to animate the rotation of the chart
-            animateRotate : true,
+            animateRotate: true,
 
             //Boolean - Whether to animate scaling the chart from the centre
-            animateScale : false,
+            animateScale: false,
 
             //String - A legend template
-            legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+            legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
 
         }
     },
-    updateChart:{
-        value:function(){
-            if (this.chart!=null) {
+    updateChart: {
+        value: function () {
+            if (this.chart != null) {
                 this.chart.destroy();
             }
             this.drawChart();
         }
     },
-    datasets:{
-        value:null
+    datasets: {
+        value: null
     },
     allData: {
-        value:null
+        value: null
     },
     getDatasets: {
         value: function () {
@@ -109,7 +109,7 @@ exports.PolarChart = Component.specialize(/** @lends PolarChart# */ {
         value: function () {
             if (this.chartContext == null) return;
             this.allData = this.getDatasets();
-            if (this.allData==null || this.allData=='undefined') return;
+            if (this.allData == null || this.allData == 'undefined') return;
             this.chart = new Chart(this.chartContext).PolarArea(this.allData, this.options);
         }
     }
