@@ -97,7 +97,7 @@ exports.LineChart = Component.specialize( /** @lends LineChart# */ {
 
 			this.chartContext = this.element.getContext( "2d" );
 
-			this.initChart();
+			this.drawChart();
 
 			this.addRangeAtPathChangeListener( 'labels', this, 'updateChart' );
 			this.addRangeAtPathChangeListener( 'datasets', this, 'updateChart' );
@@ -110,14 +110,14 @@ exports.LineChart = Component.specialize( /** @lends LineChart# */ {
 		}
 	},
 
-	initChart: {
+	drawChart: {
 		value: function() {
 			if ( this.chartContext == null ) return;
 			this.chartData = {labels: [], datasets: []};
 			this.chartData.labels = this.getLabels();
 			this.chartData.datasets = this.getDatasets();
 			if ( this.chartData.labels == null || this.chartData.labels == 'undefined' ) {
-				return;
+					return;
 			}
 			if ( this.chartData == null || this.chartData == 'undefined' ) return;
 			this.chart = new Chart( this.chartContext ).Line( this.chartData, this.options );
@@ -139,12 +139,10 @@ exports.LineChart = Component.specialize( /** @lends LineChart# */ {
 
 	updateChart: {
 		value: function() {
-			if ( this.chartContext === null ) {
-				return;
+			if ( this.chart != null ) {
+				this.chart.destroy();
 			}
-
-			this.chart.destroy();
-			this.initChart();
+			this.drawChart();
 		}
 	}
 } );

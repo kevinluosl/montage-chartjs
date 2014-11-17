@@ -29,6 +29,19 @@ exports.BarChart = Component.specialize( /** @lends BarChart# */ {
 	width: {
 		value: 600
 	},
+
+	barShowStroke: {
+		set: function( val ) {
+			this._barShowStroke = val;
+
+			this.options.barShowStroke = val;
+		},
+
+		get: function() {
+			return this._barShowStroke;
+		}
+	},
+
 	enterDocument: {
 		value: function( firstTime ) {
 			this.super( firstTime );
@@ -38,7 +51,6 @@ exports.BarChart = Component.specialize( /** @lends BarChart# */ {
 
 			this.chartContext = this.element.getContext( "2d" );
 			this.drawChart();
-
 
 			this.addRangeAtPathChangeListener( 'labels', this, 'updateChart' );
 			this.addRangeAtPathChangeListener( 'datasets', this, 'updateChart' );
