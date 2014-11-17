@@ -175,7 +175,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 }
 
             ];
-            this.templateObjects.barChart.options.barShowStroke = false;
+            this.templateObjects.barChart.options.barShowStroke = true;
 //            this.templateObjects.barChart.labels=labels;
 //            this.templateObjects.barChart.datasets=datasets;
 //
