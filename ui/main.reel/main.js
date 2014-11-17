@@ -176,6 +176,12 @@ exports.Main = Component.specialize( /** @lends Main# */ {
 
 			];
 
+			//Testing
+//			var $this = this;
+//			setTimeout( function() {
+//				$this.templateObjects.barChart.barShowStroke = false;
+//			}, 3000 )
+
 		}
 	}
 } );

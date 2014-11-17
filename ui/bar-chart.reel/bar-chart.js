@@ -54,7 +54,6 @@ exports.BarChart = Component.specialize( /** @lends BarChart# */ {
 
 			this.addRangeAtPathChangeListener( 'labels', this, 'updateChart' );
 			this.addRangeAtPathChangeListener( 'datasets', this, 'updateChart' );
-			this.addRangeAtPathChangeListener( 'barShowStroke', this, 'updateChart' );
 		}
 	},
 	options: {
