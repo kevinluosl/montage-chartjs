@@ -26,26 +26,32 @@
       <file leaf-file-name="pie-chart.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui/pie-chart.reel/pie-chart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="450">
+            <state line="20" column="11" selection-start="463" selection-end="469" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="radar-chart.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/radar-chart.reel/radar-chart.html">
+      <file leaf-file-name="chartjs.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/chartjs.reel/chartjs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="27" selection-start="216" selection-end="216" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="5" column="0" selection-start="128" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.bundle-1-0.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/builds/montage-jschart/index.html.bundle-1-0.js">
+      <file leaf-file-name="chart.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/chart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="66946" selection-end="66946" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-              <folding />
+            <state line="3" column="17" selection-start="51" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="50775">
+              <folding>
+                <marker date="1416211384000" expanded="false" signature="63603:63646" placeholder="..." />
+                <marker date="1416211384000" expanded="false" signature="73010:73053" placeholder="..." />
+                <marker date="1416211384000" expanded="false" signature="79098:79143" placeholder="..." />
+                <marker date="1416211384000" expanded="false" signature="90749:90792" placeholder="..." />
+                <marker date="1416211384000" expanded="false" signature="98622:98667" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +59,61 @@
       <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="16" selection-start="101" selection-end="101" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
+            <state line="5" column="29" selection-start="114" selection-end="114" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="condition.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/montage/ui/condition.reel/condition.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2415">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="line-chart.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/line-chart.reel/line-chart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="42" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="2295">
+              <folding>
+                <marker date="1416277381000" expanded="true" signature="1718:1761" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pie-chart.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/pie-chart.reel/pie-chart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="42" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1725">
+              <folding>
+                <marker date="1416277381000" expanded="false" signature="1740:1783" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="polar-chart.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="42" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1830">
+              <folding>
+                <marker date="1416277381000" expanded="false" signature="2134:2177" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="radar-chart.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ui/radar-chart.reel/radar-chart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="42" selection-start="176" selection-end="176" vertical-scroll-proportion="0.08053691" vertical-offset="15" max-vertical-offset="2115">
+              <folding>
+                <marker date="1416277381000" expanded="false" signature="2441:2484" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,57 +123,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="450">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="polar-chart.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="65" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.38865545" vertical-offset="175" max-vertical-offset="660">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pie-chart.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/pie-chart.reel/pie-chart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="49" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
-              <folding>
-                <marker date="1416221249000" expanded="false" signature="1747:1790" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="polar-chart.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="49" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1830">
-              <folding>
-                <marker date="1416221249000" expanded="false" signature="2141:2184" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="radar-chart.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/radar-chart.reel/radar-chart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="49" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115">
-              <folding>
-                <marker date="1416221249000" expanded="false" signature="2448:2491" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -132,22 +140,27 @@
         <option value="$PROJECT_DIR$/node_modules/moment/moment.js" />
         <option value="$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.css" />
         <option value="$PROJECT_DIR$/ui/main.reel/main.css" />
-        <option value="$PROJECT_DIR$/ui/main.reel/main.js" />
         <option value="$PROJECT_DIR$/ui/main.reel/main.html" />
         <option value="$PROJECT_DIR$/builds/montage-jschart/ui/main.reel/main.html.load.js" />
-        <option value="$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.js" />
-        <option value="$PROJECT_DIR$/ui/line-chart.reel/line-chart.js" />
-        <option value="$PROJECT_DIR$/ui/pie-chart.reel/pie-chart.js" />
-        <option value="$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.js" />
-        <option value="$PROJECT_DIR$/ui/radar-chart.reel/radar-chart.js" />
         <option value="$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.html" />
         <option value="$PROJECT_DIR$/ui/line-chart.reel/line-chart.html" />
         <option value="$PROJECT_DIR$/ui/pie-chart.reel/pie-chart.html" />
         <option value="$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.html" />
         <option value="$PROJECT_DIR$/ui/radar-chart.reel/radar-chart.html" />
         <option value="$PROJECT_DIR$/builds/montage-jschart/index.html.bundle-1-0.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/ui/main.reel/main.js" />
+        <option value="$PROJECT_DIR$/ui/chart.reel/chart.html" />
+        <option value="$PROJECT_DIR$/ui/chart.reel/chart.js" />
+        <option value="$PROJECT_DIR$/node_modules/montage/ui/chart.reel/chart.js" />
+        <option value="$PROJECT_DIR$/ui/chartjs.reel/chartjs.html" />
+        <option value="$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/ui/chartjs.reel/chartjs.js" />
+        <option value="$PROJECT_DIR$/ui/line-chart.reel/line-chart.js" />
+        <option value="$PROJECT_DIR$/ui/pie-chart.reel/pie-chart.js" />
+        <option value="$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.js" />
+        <option value="$PROJECT_DIR$/ui/radar-chart.reel/radar-chart.js" />
       </list>
     </option>
   </component>
@@ -183,6 +196,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -201,9 +215,144 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-jschart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-kevin-chartjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-jschart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-kevin-chartjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="radar-chart.reel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-jschart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-kevin-chartjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polar-chart.reel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-jschart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-kevin-chartjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pie-chart.reel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-jschart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-kevin-chartjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="line-chart.reel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-jschart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-kevin-chartjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chartjs.reel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-jschart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-kevin-chartjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bar-chart.reel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-jschart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montage-kevin-chartjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,8 +367,17 @@
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ui/chartjs.reel" />
+      <recent name="$PROJECT_DIR$/ui" />
+      <recent name="$PROJECT_DIR$/node_modules/montage/ui" />
+      <recent name="$PROJECT_DIR$/ui/chart.reel" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/node_modules/montage" />
+      <recent name="$PROJECT_DIR$/node_modules/chart" />
+      <recent name="$PROJECT_DIR$/core" />
     </key>
   </component>
   <component name="RunManager">
@@ -280,7 +438,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24945927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -291,6 +448,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -313,74 +471,26 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ui/main.reel/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/line-chart.reel/line-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <marker date="1416221249000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/montage/ui/base/abstract-button.js">
+    <entry file="file://$PROJECT_DIR$/ui/main.reel/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/main.reel/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/main.reel/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/main.reel/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/line-chart.reel/line-chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding>
-            <marker date="1416221249000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1416277381000" expanded="true" signature="1718:1761" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -388,7 +498,9 @@
     <entry file="file://$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
+          <folding>
+            <marker date="1416277067000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -404,9 +516,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/main.reel/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/digit/ui/button.reel/button.html">
@@ -441,23 +551,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/line-chart.reel/line-chart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/version.reel/version.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/radar-chart.reel/radar-chart.css">
@@ -472,23 +576,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/main.reel/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/montage/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="4" selection-start="882" selection-end="882" vertical-scroll-proportion="-7.04" vertical-offset="233" max-vertical-offset="945">
-          <folding />
-        </state>
+        <state line="39" column="4" selection-start="882" selection-end="882" vertical-scroll-proportion="-7.04" vertical-offset="233" max-vertical-offset="945" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/montage/montage.js">
@@ -502,37 +600,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/digit/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.875" vertical-offset="45" max-vertical-offset="540">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.875" vertical-offset="45" max-vertical-offset="540" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/digit/node_modules/matte/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="8" selection-start="369" selection-end="369" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chartjs/chart.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="46" selection-start="242" selection-end="242" vertical-scroll-proportion="0.030800821" vertical-offset="0" max-vertical-offset="487">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chartjs/chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="50" selection-end="56" vertical-scroll-proportion="0.092402466" vertical-offset="0" max-vertical-offset="50775">
-          <folding />
-        </state>
+        <state line="20" column="8" selection-start="369" selection-end="369" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="540" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/favicon.ico">
@@ -542,99 +620,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/builds/montage-jschart/ui/main.reel/main.html.load.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1392" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/line-chart.reel/line-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="49" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2295">
-          <folding>
-            <marker date="1416221249000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/main.reel/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/pie-chart.reel/pie-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="49" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
-          <folding>
-            <marker date="1416221249000" expanded="false" signature="1747:1790" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="49" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1830">
-          <folding>
-            <marker date="1416221249000" expanded="false" signature="2141:2184" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/radar-chart.reel/radar-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="49" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115">
-          <folding>
-            <marker date="1416221249000" expanded="false" signature="2448:2491" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/main.reel/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="264" selection-end="264" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="2220">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/line-chart.reel/line-chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/pie-chart.reel/pie-chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
+        <state line="0" column="1392" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/radar-chart.reel/radar-chart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="216" selection-end="216" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.2772074" vertical-offset="60" max-vertical-offset="1935">
+        <state line="8" column="27" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
@@ -646,17 +637,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="101" selection-end="101" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
+        <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="65" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.38865545" vertical-offset="175" max-vertical-offset="660">
+        <state line="24" column="65" selection-start="1351" selection-end="1351" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="660">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/main.reel/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="22" selection-start="264" selection-end="264" vertical-scroll-proportion="0.020380436" vertical-offset="135" max-vertical-offset="2220">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/montage/ui/slot.reel/slot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1023" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/main.reel/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="17" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="2910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/pie-chart.reel/pie-chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="11" selection-start="463" selection-end="469" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/montage/ui/condition.reel/condition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="11" selection-start="464" selection-end="470" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/line-chart.reel/line-chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="51" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="50775">
+          <folding>
+            <marker date="1416211384000" expanded="false" signature="63603:63646" placeholder="..." />
+            <marker date="1416211384000" expanded="false" signature="73010:73053" placeholder="..." />
+            <marker date="1416211384000" expanded="false" signature="79098:79143" placeholder="..." />
+            <marker date="1416211384000" expanded="false" signature="90749:90792" placeholder="..." />
+            <marker date="1416211384000" expanded="false" signature="98622:98667" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="29" selection-start="114" selection-end="114" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/bar-chart.reel/bar-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="39" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
+          <folding>
+            <marker date="1416277067000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/chartjs.reel/chartjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="128" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/line-chart.reel/line-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="42" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="2295">
+          <folding>
+            <marker date="1416277381000" expanded="true" signature="1718:1761" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/pie-chart.reel/pie-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="42" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1725">
+          <folding>
+            <marker date="1416277381000" expanded="false" signature="1740:1783" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/polar-chart.reel/polar-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="42" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1830">
+          <folding>
+            <marker date="1416277381000" expanded="false" signature="2134:2177" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/radar-chart.reel/radar-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="42" selection-start="176" selection-end="176" vertical-scroll-proportion="0.08053691" vertical-offset="15" max-vertical-offset="2115">
+          <folding>
+            <marker date="1416277381000" expanded="false" signature="2441:2484" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

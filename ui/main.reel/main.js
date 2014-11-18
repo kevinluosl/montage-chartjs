@@ -82,6 +82,7 @@ exports.Main = Component.specialize( /** @lends Main# */ {
 					pointHighlightStroke: "rgba(151,187,205,1)",
 					data: [28, 48, 40, 19, 86, 27, 98]
 				}
+
 			];
 
 			this.radarLabels = ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"];

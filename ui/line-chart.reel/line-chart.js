@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require( "montage/ui/component" ).Component;
-var Chart = require( "../../chartjs/chart.min" );
+var Chart = require( "../../core/chart" );
 /**
  * @class LineChart
  * @extends Component

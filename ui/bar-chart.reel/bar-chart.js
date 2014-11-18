@@ -2,32 +2,18 @@
  * @module ui/bar-chart.reel
  * @requires montage/ui/component
  */
-var Component = require( "montage/ui/component" ).Component;
-var Chart = require( "../../chartjs/chart.min" );
+var Chartjs = require( "../chartjs.reel" ).Chartjs;
+
 /**
  * @class BarChart
  * @extends Component
  */
-exports.BarChart = Component.specialize( /** @lends BarChart# */ {
+exports.BarChart = Chartjs.specialize( /** @lends BarChart# */ {
 	constructor: {
 		value: function BarChart() {
 			this.super();
 
 		}
-	},
-	chartContext: {
-		value: null
-	},
-	chart: {
-		value: null
-	},
-
-	height: {
-		value: 400
-	},
-
-	width: {
-		value: 600
 	},
 
 	barShowStroke: {
