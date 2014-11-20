@@ -1,1 +1,0 @@
-montageDefine("a85f63b","ui/button.reel/button",{dependencies:["native/ui/button.reel"],factory:function(t,e){var n=t("native/ui/button.reel").Button;e.Button=n.specialize({hasTemplate:{value:!0},constructor:{value:function(){this.super(),this.classList.add("matte-Button")}}})}});

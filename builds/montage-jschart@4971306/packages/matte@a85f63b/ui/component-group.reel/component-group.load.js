@@ -1,1 +1,0 @@
-montageDefine("a85f63b","ui/component-group.reel/component-group",{dependencies:["montage/ui/component"],factory:function(t,e){var n=t("montage/ui/component").Component;e.ComponentGroup=n.specialize({hasTemplate:{value:!1},initWithComponents:{value:function(t){return this.childComponents=t,this}}})}});

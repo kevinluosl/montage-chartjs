@@ -1,1 +1,0 @@
-montageDefine("5ed7eac","ui/radio-button.reel/radio-button",{dependencies:["montage/ui/base/abstract-radio-button"],factory:function(t,e){var i=t("montage/ui/base/abstract-radio-button").AbstractRadioButton;CLASS_PREFIX="digit-RadioButton",e.RadioButton=i.specialize({constructor:{value:function(){this.super()}}})}});
