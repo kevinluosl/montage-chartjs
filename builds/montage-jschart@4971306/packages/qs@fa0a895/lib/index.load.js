@@ -1,1 +1,0 @@
-montageDefine("fa0a895","lib/index",{dependencies:["./stringify","./parse"],factory:function(e,t,n){var i=e("./stringify"),r=e("./parse");n.exports={stringify:i,parse:r}}});

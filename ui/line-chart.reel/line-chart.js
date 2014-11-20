@@ -2,41 +2,17 @@
  * @module ui/charts/line-chart.reel
  * @requires montage/ui/component
  */
-var Component = require( "montage/ui/component" ).Component;
-var Chart = require( "../../core/chart" );
+var Chartjs = require("../chartjs.reel").Chartjs;
 /**
  * @class LineChart
  * @extends Component
  */
-exports.LineChart = Component.specialize( /** @lends LineChart# */ {
+exports.LineChart = Chartjs.specialize( /** @lends LineChart# */ {
 	constructor: {
 		value: function LineChart() {
 			this.super();
 		}
 	},
-
-	chart: {
-		value: null
-	},
-
-	height: {
-		value: 300
-	},
-
-	width: {
-		value: 600
-	},
-
-	labels: {
-		value: null
-	},
-	datasets: {
-		value: null
-	},
-	allData: {
-		value: null
-	},
-
 	options: {
 		value: {
 			///Boolean - Whether grid lines are shown across the chart
@@ -74,75 +50,9 @@ exports.LineChart = Component.specialize( /** @lends LineChart# */ {
 
 			//Boolean - Whether to fill the dataset with a colour
 			datasetFill: true,
-
+            responsive: true,
 			//String - A legend template
 			legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
-		}
-	},
-
-	chartData: {
-		value: {}
-	},
-
-	chartContext: {
-		value: null
-	},
-
-	enterDocument: {
-		value: function( firstTime ) {
-			this.super( firstTime );
-
-			Chart.defaults.global.responsive = true;
-			Chart.defaults.global.maintainAspectRatio = true;
-
-			this.chartContext = this.element.getContext( "2d" );
-
-			this.drawChart();
-
-			this.addRangeAtPathChangeListener( 'labels', this, 'updateChart' );
-			this.addRangeAtPathChangeListener( 'datasets', this, 'updateChart' );
-		}
-	},
-
-	exitDocument: {
-		value: function() {
-			this.super();
-		}
-	},
-
-	drawChart: {
-		value: function() {
-			if ( this.chartContext == null ) return;
-			this.chartData = {labels: [], datasets: []};
-			this.chartData.labels = this.getLabels();
-			this.chartData.datasets = this.getDatasets();
-			if ( this.chartData.labels == null || this.chartData.labels == 'undefined' ) {
-				return;
-			}
-			if ( this.chartData == null || this.chartData == 'undefined' ) return;
-			this.chart = new Chart( this.chartContext ).Line( this.chartData, this.options );
-		}
-	},
-
-	getLabels: {
-		value: function() {
-			return this.labels;
-
-		}
-	},
-
-	getDatasets: {
-		value: function() {
-			return this.datasets;
-		}
-	},
-
-	updateChart: {
-		value: function() {
-			if ( this.chart != null ) {
-				this.chart.destroy();
-			}
-			this.drawChart();
 		}
 	}
 } );

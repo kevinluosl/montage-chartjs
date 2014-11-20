@@ -2,108 +2,59 @@
  * @module ui/pie-chart.reel
  * @requires montage/ui/component
  */
-var Component = require( "montage/ui/component" ).Component;
-var Chart = require( "../../core/chart" );
+var Chartjs = require("../chartjs.reel").Chartjs;
 /**
  * @class PieChart
  * @extends Component
  */
-exports.PieChart = Component.specialize( /** @lends PieChart# */ {
-	constructor: {
-		value: function PieChart() {
-			this.super();
-		}
-	},
-	chartContext: {
-		value: null
-	},
-	chart: {
-		value: null
-	},
+exports.PieChart = Chartjs.specialize(/** @lends PieChart# */ {
+    constructor: {
+        value: function PieChart() {
+            this.super();
+        }
+    },
+    pieOrDoughnut: {
+        value: false
+    },
+    drawChart: {
+        value: function () {
+            if (this.pieOrDoughnut) {
+                this.options.percentageInnerCutout = 50;
+            }
+            else {
+                this.options.percentageInnerCutout = 0;
+            }
+            this.super();
+        }
+    },
+    options: {
+        value: {
+            //Boolean - Whether we should show a stroke on each segment
+            segmentShowStroke: true,
 
-	height: {
-		value: 400
-	},
-	width: {
-		value: 600
-	},
-	pieOrDoughnut: {
-		value: false
-	},
-	enterDocument: {
-		value: function( firstTime ) {
-			this.super( firstTime );
-//
-			Chart.defaults.global.responsive = true;
-			Chart.defaults.global.maintainAspectRatio = true;
+            //String - The colour of each segment stroke
+            segmentStrokeColor: "#fff",
 
-			this.chartContext = this.element.getContext( "2d" );
-			this.drawChart();
+            //Number - The width of each segment stroke
+            segmentStrokeWidth: 2,
 
-			this.addRangeAtPathChangeListener( 'datasets', this, 'updateChart' );
-		}
-	},
-	options: {
-		value: {
-			//Boolean - Whether we should show a stroke on each segment
-			segmentShowStroke: true,
+            //Number - The percentage of the chart that we cut out of the middle
+            percentageInnerCutout: 0, // This is 0 for Pie charts
 
-			//String - The colour of each segment stroke
-			segmentStrokeColor: "#fff",
+            //Number - Amount of animation steps
+            animationSteps: 100,
 
-			//Number - The width of each segment stroke
-			segmentStrokeWidth: 2,
+            //String - Animation easing effect
+            animationEasing: "easeOutBounce",
 
-			//Number - The percentage of the chart that we cut out of the middle
-			percentageInnerCutout: 0, // This is 0 for Pie charts
+            //Boolean - Whether we animate the rotation of the Doughnut
+            animateRotate: true,
 
-			//Number - Amount of animation steps
-			animationSteps: 100,
-
-			//String - Animation easing effect
-			animationEasing: "easeOutBounce",
-
-			//Boolean - Whether we animate the rotation of the Doughnut
-			animateRotate: true,
-
-			//Boolean - Whether we animate scaling the Doughnut from the centre
-			animateScale: false,
-
-			//String - A legend template
-			legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
-		}
-	},
-	updateChart: {
-		value: function() {
-			if ( this.chart != null ) {
-				this.chart.destroy();
-			}
-			this.drawChart();
-		}
-	},
-	datasets: {
-		value: null
-	},
-	allData: {
-		value: null
-	},
-	getDatasets: {
-		value: function() {
-			return this.datasets;
-		}
-	},
-	drawChart: {
-		value: function() {
-			if ( this.chartContext == null ) return;
-			this.allData = this.getDatasets();
-			if ( this.allData == null || this.allData == 'undefined' ) return;
-			if ( this.pieOrDoughnut ) {
-				this.options.percentageInnerCutout = 50;
-			}
-			else {
-				this.options.percentageInnerCutout = 0;
-			}
-			this.chart = new Chart( this.chartContext ).Pie( this.allData, this.options );
-		}
-	}
-} );
+            //Boolean - Whether we animate scaling the Doughnut from the centre
+            animateScale: false,
+            responsive: true,
+            //String - A legend template
+            legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+        }
+    }
+});

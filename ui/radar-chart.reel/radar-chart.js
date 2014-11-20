@@ -2,43 +2,15 @@
  * @module ui/radar-chart.reel
  * @requires montage/ui/component
  */
-var Component = require( "montage/ui/component" ).Component;
-var Chart = require( "../../core/chart" );
+var Chartjs = require("../chartjs.reel").Chartjs;
 /**
  * @class RadarChart
  * @extends Component
  */
-exports.RadarChart = Component.specialize( /** @lends RadarChart# */ {
+exports.RadarChart = Chartjs.specialize( /** @lends RadarChart# */ {
 	constructor: {
 		value: function RadarChart() {
 			this.super();
-		}
-	},
-	chartContext: {
-		value: null
-	},
-	chart: {
-		value: null
-	},
-
-	height: {
-		value: null
-	},
-	width: {
-		value: null
-	},
-	enterDocument: {
-		value: function( firstTime ) {
-			this.super( firstTime );
-
-			Chart.defaults.global.responsive = true;
-			Chart.defaults.global.maintainAspectRatio = true;
-
-			this.chartContext = this.element.getContext( "2d" );
-			this.drawChart();
-
-			this.addRangeAtPathChangeListener( 'labels', this, 'updateChart' );
-			this.addRangeAtPathChangeListener( 'datasets', this, 'updateChart' );
 		}
 	},
 	options: {
@@ -93,43 +65,9 @@ exports.RadarChart = Component.specialize( /** @lends RadarChart# */ {
 
 			//Boolean - Whether to fill the dataset with a colour
 			datasetFill: true,
-
+            responsive: true,
 			//String - A legend template
 			legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
-		}
-	},
-	updateChart: {
-		value: function() {
-			if ( this.chart != null ) {
-				this.chart.destroy();
-			}
-			this.drawChart();
-		}
-	},
-	labels: {
-		value: null
-	},
-	datasets: {
-		value: null
-	},
-	allData: {
-		value: null
-	},
-	getDatasets: {
-		value: function() {
-
-			var dataset = {labels: [], datasets: []};
-			dataset.labels = this.labels;
-			dataset.datasets = this.datasets;
-			return dataset;
-		}
-	},
-	drawChart: {
-		value: function() {
-			if ( this.chartContext == null ) return;
-			this.allData = this.getDatasets();
-			if ( !this.allData.labels || !this.allData.datasets ) return;
-			this.chart = new Chart( this.chartContext ).Radar( this.allData, this.options );
 		}
 	}
 } );

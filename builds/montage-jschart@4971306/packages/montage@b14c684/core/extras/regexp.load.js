@@ -1,1 +1,0 @@
-montageDefine("b14c684","core/extras/regexp",{dependencies:[],factory:function(){if(!RegExp.isRegExp){var t=Object.prototype.toString;Object.defineProperty(RegExp,"isRegExp",{value:function(e){return"[object RegExp]"===t.call(e)},writable:!0,configurable:!0})}}});

@@ -1597,7 +1597,7 @@
 
 				each(this.xLabels,function(label,index){
 					var xPos = this.calculateX(index) + aliasPixel(this.lineWidth),
-						// Check to see if line/bar here and decide where to place the line
+						// Check to see if line/realPic here and decide where to place the line
 						linePos = this.calculateX(index - (this.offsetGridLines ? 0.5 : 0)) + aliasPixel(this.lineWidth),
 						isRotated = (this.xLabelRotation > 0);
 
@@ -1963,10 +1963,10 @@
 		//Number - Width of the grid lines
 		scaleGridLineWidth : 1,
 
-		//Boolean - If there is a stroke on each bar
+		//Boolean - If there is a stroke on each realPic
 		barShowStroke : true,
 
-		//Number - Pixel width of the bar stroke
+		//Number - Pixel width of the realPic stroke
 		barStrokeWidth : 2,
 
 		//Number - Spacing between each of the X value sets
@@ -1992,7 +1992,7 @@
 			this.ScaleClass = Chart.Scale.extend({
 				offsetGridLines : true,
 				calculateBarX : function(datasetCount, datasetIndex, barIndex){
-					//Reusable method for calculating the xPosition of a given bar based on datasetIndex & width of the bar
+					//Reusable method for calculating the xPosition of a given realPic based on datasetIndex & width of the realPic
 					var xWidth = this.calculateBaseWidth(),
 						xAbsolute = this.calculateX(barIndex) - (xWidth/2),
 						barWidth = this.calculateBarWidth(datasetCount);
@@ -2003,7 +2003,7 @@
 					return (this.calculateX(1) - this.calculateX(0)) - (2*options.barValueSpacing);
 				},
 				calculateBarWidth : function(datasetCount){
-					//The padding between datasets is to the right of each bar, providing that there are more than 1 dataset
+					//The padding between datasets is to the right of each realPic, providing that there are more than 1 dataset
 					var baseWidth = this.calculateBaseWidth() - ((datasetCount - 1) * options.barDatasetSpacing);
 
 					return (baseWidth / datasetCount);
