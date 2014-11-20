@@ -206,7 +206,6 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
             if (this.chartContext == null) return;
             this.allData = this.getDatasets();
             if (!this.allData.labels || !this.allData.datasets) return;
-            debugger
             if (!this.realPic) {
                 this.chart = new Chart(this.chartContext);
                 this.realPic = this.chart.Bar(this.allData, this.options);

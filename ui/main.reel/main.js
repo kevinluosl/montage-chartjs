@@ -180,7 +180,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var self = this;
             setTimeout(function () {
                 var tlabel = ["January", "JJ", "March", "April", "May", "June", "July", 'Jashon'];
-                debugger
                 self.barLabels = tlabel;
                 self.templateObjects.barChart.setSeriesFillColor(0, "rgba(220,100,220,0.2)");
                 self.templateObjects.barChart.setSeriesStrokeColor(0, "rgba(100,100,220,0.2)");
