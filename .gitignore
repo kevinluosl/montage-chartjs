@@ -1,4 +1,8 @@
 .idea/workspace.xml
 bulds/*
 
-/.idea/workspace.xml
+.idea/workspace.xml
+
+builds/
+
+workspace.xml
