@@ -6,3 +6,5 @@ bulds/*
 builds/
 
 workspace.xml
+
+/.idea
