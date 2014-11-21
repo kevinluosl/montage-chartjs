@@ -107,7 +107,7 @@ exports.Chartjs = Component.specialize(/** @lends Chartjs# */ {
     },
     updateChart: {
         value: function () {
-            this.needsDraw = true;
+
         }
     },
     drawChart: {

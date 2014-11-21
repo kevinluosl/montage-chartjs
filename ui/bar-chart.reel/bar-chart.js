@@ -47,6 +47,7 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
     },
     setSeriesFillColor: {
         value: function (serieIdx, fillClr) {
+            if (serieIdx < 0) serieIdx = 0;
             if (this.realPic && this.realPic.datasets && serieIdx < this.realPic.datasets.length) {
                 this.realPic.datasets[serieIdx].fillColor = fillClr;
                 this.datasets[serieIdx].fillColor = fillClr;
@@ -64,6 +65,7 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
     },
     getSeriesFillColor: {
         value: function (serieIdx) {
+            if (serieIdx < 0) serieIdx = 0;
             if (this.realPic && this.realPic.datasets && serieIdx < this.realPic.datasets.length) {
                 return  this.realPic.datasets[serieIdx].fillColor;
             }
@@ -74,6 +76,7 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
     },
     setSeriesStrokeColor: {
         value: function (serieIdx, strokeClr) {
+            if (serieIdx < 0) serieIdx = 0;
             if (this.realPic && this.realPic.datasets && serieIdx < this.realPic.datasets.length) {
                 this.realPic.datasets[serieIdx].strokeColor = strokeClr;
                 this.datasets[serieIdx].strokeColor = strokeClr;
@@ -91,6 +94,7 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
     },
     getSeriesStrokeColor: {
         value: function (serieIdx) {
+            if (serieIdx < 0) serieIdx = 0;
             if (this.realPic && this.realPic.datasets && serieIdx < this.realPic.datasets.length) {
                 return  this.realPic.datasets[serieIdx].strokeColor;
             }
@@ -110,6 +114,7 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
 //                    }
 //                }
 //            }
+            if (dataidx < 0) dataidx = 0;
             if (this.labels && dataidx < this.labels.length) {
                 this.labels[dataidx] = label;
                 this.selfRefesh = true;
@@ -122,6 +127,7 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
     },
     getLabels: {
         value: function (dataidx) {
+            if (dataidx < 0) dataidx = 0;
 //            if (this.realPic && this.realPic.datasets && this.realPic.datasets[0].bars && dataidx < this.realPic.datasets[0].bars.length) {
 //                return  this.realPic.datasets[0].bars[dataidx].label;
             if (this.labels && dataidx < this.labels.length) {
@@ -134,6 +140,8 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
     },
     setSeriesData: {
         value: function (serieIdx, dataidx, val) {
+            if (serieIdx < 0) serieIdx = 0;
+            if (dataidx < 0) dataidx = 0;
             if (this.realPic && this.realPic.datasets && serieIdx < this.realPic.datasets.length) {
                 if (this.realPic.datasets[serieIdx].bars && dataidx < this.realPic.datasets[serieIdx].bars.length) {
                     this.datasets[serieIdx].data[dataidx] = val;
@@ -151,6 +159,8 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
     },
     getSeriesData: {
         value: function (serieIdx, dataidx) {
+            if (serieIdx < 0) serieIdx = 0;
+            if (dataidx < 0) dataidx = 0;
             if (this.realPic && this.realPic.datasets && serieIdx < this.realPic.datasets.length) {
                 if (this.realPic.datasets[serieIdx].bars && dataidx < this.realPic.datasets[serieIdx].bars.length) {
                     return this.realPic.datasets[serieIdx].bars[dataidx].value;
