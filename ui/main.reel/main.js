@@ -185,6 +185,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 self.templateObjects.barChart.setSeriesStrokeColor(0, "rgba(100,100,220,0.2)");
                 self.templateObjects.barChart.setLabels(2, "TestLabel");
                 self.templateObjects.barChart.setSeriesData(0, 2, 10);
+                self.templateObjects.barChart.removeData(3);
+                self.templateObjects.barChart.addData([30, 60], "NewAdded");
             }, 5000);
 
 //            setTimeout(function () {

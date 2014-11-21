@@ -51,7 +51,7 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
                 this.realPic.datasets[serieIdx].fillColor = fillClr;
                 this.datasets[serieIdx].fillColor = fillClr;
                 if (this.realPic.datasets[serieIdx].bars) {
-                    for (var k = 0; k < this.realPic.datasets[serieIdx].bars.length; k++) {
+                    for (var k = 0, len = this.realPic.datasets[serieIdx].bars.length; k < len; k++) {
                         this.realPic.datasets[serieIdx].bars[k].fillColor = fillClr;
                     }
                 }
@@ -78,7 +78,7 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
                 this.realPic.datasets[serieIdx].strokeColor = strokeClr;
                 this.datasets[serieIdx].strokeColor = strokeClr;
                 if (this.realPic.datasets[serieIdx].bars) {
-                    for (var k = 0; k < this.realPic.datasets[serieIdx].bars.length; k++) {
+                    for (var k = 0, len = this.realPic.datasets[serieIdx].bars.length; k < len; k++) {
                         this.realPic.datasets[serieIdx].bars[k].strokeColor = strokeClr;
                     }
                 }
@@ -193,12 +193,46 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
             return dataset;
         }
     },
+    addLocalData: {
+        value: function (darr) {
+            if (!this.datasets) return;
+            for (var k = 0, len = this.datasets.length; k < len; k++) {
+                this.datasets[k].data.splice(-1, 0, darr[k]);
+            }
+        }
+    },
+    addData: {
+        value: function (darr, label) {
+            if (!darr || !label) return;
+            if (this.realPic && darr.length == this.realPic.datasets.length) {
+                this.labels.splice(-1, 0, label);
+                this.addLocalData(darr);
+                this.realPic.addData(darr, label);
+                this.needsDraw = true;
+            }
+            else {
+                throw "Your data array is not suitable for series.";
+            }
+        }
+    },
+    removeData: {
+        value: function (dataidx) {
+            if (dataidx > 0 && dataidx < this.labels.length) {
+                this.labels.splice(dataidx, 1);
+                for (var k = 0, len = this.realPic.datasets.length; k < len; k++) {
+                    this.datasets[k].data.splice(dataidx, 1);
+                    this.realPic.datasets[k].bars.splice(dataidx, 1);
+                }
+                this.needsDraw = true;
+            }
+            else {
+                throw "Your data index is out of bounds.";
+            }
+        }
+    },
     removeAllData: {
         value: function () {
-            if (this.realPic && this.realPic.datasets)
-                for (var k = 0; k < this.realPic.datasets.length; k++) {
-                    this.realPic.removeData();
-                }
+            this.destroy();
         }
     },
     drawChart: {

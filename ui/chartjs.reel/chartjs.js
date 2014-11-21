@@ -76,6 +76,15 @@ exports.Chartjs = Component.specialize(/** @lends Chartjs# */ {
     setFreshData: {
         value: null
     },
+    addLocalData: {
+        value: null
+    },
+    addData: {
+        value: null
+    },
+    removeData: {
+        value: null
+    },
     removeAllData: {
         value: null
     },
@@ -93,8 +102,8 @@ exports.Chartjs = Component.specialize(/** @lends Chartjs# */ {
             this.drawChart();
         }
     },
-    destroy:{
-        value:null
+    destroy: {
+        value: null
     },
     updateChart: {
         value: function () {
