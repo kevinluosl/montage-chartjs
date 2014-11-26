@@ -33,14 +33,17 @@ exports.Chartjs = Component.specialize(/** @lends Chartjs# */ {
     getDatasets: {
         value: null
     },
+    contentController:{
+      value:null
+    },
     enterDocument: {
         value: function (isFirstTime) {
             this.super(isFirstTime);
             this.chartContext = this.element.getContext("2d");
 //			this.drawChart();
 //            this.addOwnPropertyChangeListener('labels', this);//, 'updateChart');
-            this.addRangeAtPathChangeListener('labels', this, 'updateChart');
-            this.addRangeAtPathChangeListener('datasets', this, 'updateChart');
+//            this.addRangeAtPathChangeListener('labels', this, 'updateChart');
+//            this.addRangeAtPathChangeListener('contentController', this, 'updateChart');
         }
     },
 //    handlePropertyChange:{
@@ -49,45 +52,45 @@ exports.Chartjs = Component.specialize(/** @lends Chartjs# */ {
 //          this.needsDraw = true;
 //      }
 //    },
-    setSeriesFillColor: {
-        value: null
-    },
-    getSeriesFillColor: {
-        value: null
-    },
-    setSeriesStrokeColor: {
-        value: null
-    },
-    getSeriesStrokeColor: {
-        value: null
-    },
-    setSeriesLabels: {
-        value: null
-    },
-    getSeriesLabels: {
-        value: null
-    },
-    setSeriesData: {
-        value: null
-    },
-    getSeriesData: {
-        value: null
-    },
-    setFreshData: {
-        value: null
-    },
-    addLocalData: {
-        value: null
-    },
-    addData: {
-        value: null
-    },
-    removeData: {
-        value: null
-    },
-    removeAllData: {
-        value: null
-    },
+//    setSeriesFillColor: {
+//        value: null
+//    },
+//    getSeriesFillColor: {
+//        value: null
+//    },
+//    setSeriesStrokeColor: {
+//        value: null
+//    },
+//    getSeriesStrokeColor: {
+//        value: null
+//    },
+//    setSeriesLabels: {
+//        value: null
+//    },
+//    getSeriesLabels: {
+//        value: null
+//    },
+//    setSeriesData: {
+//        value: null
+//    },
+//    getSeriesData: {
+//        value: null
+//    },
+//    setFreshData: {
+//        value: null
+//    },
+//    addLocalData: {
+//        value: null
+//    },
+//    addData: {
+//        value: null
+//    },
+//    removeData: {
+//        value: null
+//    },
+//    removeAllData: {
+//        value: null
+//    },
     selfRefesh: {
         value: false
     },

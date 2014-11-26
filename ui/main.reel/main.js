@@ -175,18 +175,24 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                     label: "Dark Grey"
                 }
             ];
+            //this.templateObjects.chartController.content = this.barDatasets;
+            //this.templateObjects.chartController.labels = this.barLabels;
 
             //Testing
             var self = this;
             setTimeout(function () {
-                var tlabel = ["January", "JJ", "March", "April", "May", "June", "July", 'Jashon'];
-                self.barLabels = tlabel;
-                self.templateObjects.barChart.setSeriesFillColor(0, "rgba(220,100,220,0.2)");
-                self.templateObjects.barChart.setSeriesStrokeColor(0, "rgba(100,100,220,0.2)");
-                self.templateObjects.barChart.setLabels(2, "TestLabel");
-                self.templateObjects.barChart.setSeriesData(0, 2, 10);
-                self.templateObjects.barChart.removeData(3);
-                self.templateObjects.barChart.addData([30, 60], "NewAdded");
+                //var tlabel = ["January", "JJ", "March", "April", "May", "June", "July", 'Jashon'];
+                //self.barLabels = tlabel;
+                //self.templateObjects.barChart.setSeriesFillColor(0, "rgba(220,100,220,0.2)");
+                //self.templateObjects.barChart.setSeriesStrokeColor(0, "rgba(100,100,220,0.2)");
+                //self.templateObjects.barChart.setLabels(2, "TestLabel");
+                //self.templateObjects.barChart.setSeriesData(0, 2, 10);
+                //self.templateObjects.barChart.removeData(3);
+                //self.templateObjects.barChart.addData([30, 60], "NewAdded");
+                //self.templateObjects.barChart.barShowStroke=false;
+                self.barLabels[1] = "TestLabel";
+
+
             }, 5000);
 
 //            setTimeout(function () {

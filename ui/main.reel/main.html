@@ -16,13 +16,17 @@
           "barChart": {
             "prototype": "ui/bar-chart.reel",
             "properties": {
-                "element": {"#": "barChart"}
-            },
-            "bindings": {
-                "labels": {"<-": "@owner.barLabels"},
-                "datasets": {"<-": "@owner.barDatasets"}
+                "element": {"#": "barChart"},
+                "contentController": {"@": "chartController"}
             }
-          }
+          },
+        "chartController":{
+            "prototype": "ui/chart-controller.reel/chart-controller",
+            "bindings": {
+                "content": {"<-": "@owner.barDatasets"},
+                "labels": {"<-": "@owner.barLabels"}
+            }
+        }
 
      }
 
