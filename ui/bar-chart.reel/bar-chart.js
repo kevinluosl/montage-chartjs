@@ -15,6 +15,8 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
             this.selfRefesh = false;
 
             this.addPathChangeListener("contentController", this, "handleContentControllerChange");
+            this.addPathChangeListener("datasets", this, "handleValuesChange");
+            this.addPathChangeListener("labels", this, "handleValuesChange");
             this.defineBindings({
                 "datasets": {
                     "<-": "contentController.content"
@@ -22,6 +24,12 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
                     "<-": "contentController.labels"
                 }
             });
+        }
+    },
+    setRedraw: {
+        value: function () {
+            this.selfRefesh = true;
+            this.needsDraw = true;
         }
     },
     scaleBeginAtZero: {

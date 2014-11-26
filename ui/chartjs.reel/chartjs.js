@@ -33,8 +33,8 @@ exports.Chartjs = Component.specialize(/** @lends Chartjs# */ {
     getDatasets: {
         value: null
     },
-    contentController:{
-      value:null
+    contentController: {
+        value: null
     },
     enterDocument: {
         value: function (isFirstTime) {
@@ -112,6 +112,9 @@ exports.Chartjs = Component.specialize(/** @lends Chartjs# */ {
         value: function () {
 
         }
+    },
+    setRedraw: {
+        value: null
     },
     drawChart: {
         value: function () {
