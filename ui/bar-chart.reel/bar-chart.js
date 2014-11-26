@@ -26,7 +26,7 @@ exports.BarChart = Chartjs.specialize(/** @lends BarChart# */ {
             });
         }
     },
-    setRedraw: {
+    reDraw: {
         value: function () {
             this.selfRefesh = true;
             this.needsDraw = true;

@@ -192,7 +192,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 self.barLabels[1] = "TestLabel";
                 self.barDatasets[0].data[0]=96;
                 self.barDatasets[0].fillColor="rgba(100,220,220,0.5)";
-                self.templateObjects.barChart.setRedraw();
+                self.templateObjects.barChart.reDraw();
             }, 5000);
 
 //            setTimeout(function () {

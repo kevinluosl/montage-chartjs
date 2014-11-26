@@ -113,7 +113,7 @@ exports.Chartjs = Component.specialize(/** @lends Chartjs# */ {
 
         }
     },
-    setRedraw: {
+    reDraw: {
         value: null
     },
     drawChart: {
