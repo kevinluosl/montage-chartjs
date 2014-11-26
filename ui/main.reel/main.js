@@ -188,7 +188,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 //self.templateObjects.barChart.setSeriesData(0, 2, 10);
                 //self.templateObjects.barChart.removeData(3);
                 //self.templateObjects.barChart.addData([30, 60], "NewAdded");
-                //self.templateObjects.barChart.barShowStroke=false;
+                self.templateObjects.barChart.barShowStroke=false;
                 self.barLabels[1] = "TestLabel";
                 self.barDatasets[0].data[0]=96;
                 self.barDatasets[0].fillColor="rgba(100,220,220,0.5)";
