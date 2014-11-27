@@ -5,12 +5,12 @@
 var RangeController = require( "montage/core/range-controller" ).RangeController;
 
 /**
- * @class ChartController
+ * @class ChartRangeController
  * @extends Component
  */
-exports.ChartController = RangeController.specialize( /** @lends ChartController# */ {
+exports.ChartRangeController = RangeController.specialize( /** @lends ChartRangeController# */ {
 	constructor: {
-		value: function ChartController( content, labels ) {
+		value: function ChartRangeController( content, labels ) {
 			this.super( content );
 			this.labels = labels;
 
