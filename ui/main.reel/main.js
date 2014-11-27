@@ -185,7 +185,7 @@ exports.Main = Component.specialize( /** @lends Main# */ {
 //                self.templateObjects.barChart.reDraw();
 //				self.barDatasets[0].label = 'Meg';
 //
-				self.templateObjects.chartController.content[0].label = 'New Label Test';
+				self.templateObjects.chartRangeController.content[0].label = 'New Label Test';
 
 			}, 5000 );
 
