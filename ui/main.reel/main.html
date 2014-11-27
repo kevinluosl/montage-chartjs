@@ -26,11 +26,22 @@
                 "content": {"<-": "@owner.barDatasets"},
                 "labels": {"<-": "@owner.barLabels"}
             }
-        }
+        },
+
+        "testSelect":{
+            "prototype": "digit/ui/select.reel",
+            "properties": {
+                "element": {"#": "testSelect"},
+                "contentController": {"@": "chartController"},
+                "labelPropertyName": "label",
+                "valuePropertyPath": "highlightFill"
+            }
+          }
 
      }
 
-</script>
+
+    </script>
 </head>
 <body>
 <div data-montage-id="main" data-montage-skin="light" class="Main">
@@ -42,9 +53,9 @@
 
     <div class="Main-chartContainer">
         <div data-montage-id="barChart">
-
         </div>
 
+        <select data-montage-id="testSelect"></select>
     </div>
 
 </div>
