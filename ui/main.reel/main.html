@@ -17,11 +17,11 @@
             "prototype": "ui/bar-chart.reel",
             "properties": {
                 "element": {"#": "barChart"},
-                "contentController": {"@": "chartRangerController"}
+                "contentController": {"@": "chartRangeController"}
             }
           },
-        "chartRangerController":{
-            "prototype": "ui/chart-range-controller.reel/chart-range-controller",
+        "chartRangeController":{
+            "prototype": "montage/core/range-controller",
             "bindings": {
                 "content": {"<-": "@owner.barDatasets"},
                 "labels": {"<-": "@owner.barLabels"}
@@ -32,7 +32,7 @@
             "prototype": "digit/ui/select.reel",
             "properties": {
                 "element": {"#": "testSelect"},
-                "contentController": {"@": "chartRangerController"},
+                "contentController": {"@": "chartRangeController"},
                 "labelPropertyName": "label",
                 "valuePropertyPath": "highlightFill"
             }
