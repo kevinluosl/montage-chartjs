@@ -185,7 +185,7 @@ exports.Main = Component.specialize( /** @lends Main# */ {
                 //self.templateObjects.barChart.reDraw();
 //
 //				self.templateObjects.chartController.content[0].label = 'New Label Test';
-                self.templateObjects.chartController.content[0].fillColor="rgba(100,220,220,0.5)";
+//                self.templateObjects.chartController.content[0].fillColor="rgba(100,220,220,0.5)";
 
 			}, 5000 );
 
