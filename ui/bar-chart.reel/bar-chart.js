@@ -155,8 +155,9 @@ exports.BarChart = Chartjs.specialize( /** @lends BarChart# */ {
 				this.realPic = this.chart.Bar( allData, this.options );
 			}
 			else if ( this._needRefreshChart ) {
-				this.realPic.destroy();
-				this.realPic = this.chart.Bar( allData, this.options );
+				this.realPic.initialize(allData);
+				this.realPic.update();
+				//this.realPic = this.chart.Bar( allData, this.options );
 				this._needRefreshChart = false;
 			}
 			else { // We don't go here now, see if we have a way to know some items are change in RangeController.content, than we can do something here
