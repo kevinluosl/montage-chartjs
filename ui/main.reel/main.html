@@ -17,27 +17,16 @@
             "prototype": "ui/bar-chart.reel",
             "properties": {
                 "element": {"#": "barChart"},
-                "contentController": {"@": "chartRangeController"}
+                "contentController": {"@": "chartController"}
             }
           },
-        "chartRangeController":{
+        "chartController":{
             "prototype": "montage/core/range-controller",
             "bindings": {
                 "content": {"<-": "@owner.barDatasets"},
                 "labels": {"<-": "@owner.barLabels"}
             }
-        },
-
-        "testSelect":{
-            "prototype": "digit/ui/select.reel",
-            "properties": {
-                "element": {"#": "testSelect"},
-                "contentController": {"@": "chartRangeController"},
-                "labelPropertyName": "label",
-                "valuePropertyPath": "highlightFill"
-            }
-          }
-
+        }
      }
 
 
@@ -55,7 +44,6 @@
         <div data-montage-id="barChart">
         </div>
 
-        <select data-montage-id="testSelect"></select>
     </div>
 
 </div>

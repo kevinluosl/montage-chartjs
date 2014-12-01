@@ -155,6 +155,8 @@ exports.BarChart = Chartjs.specialize( /** @lends BarChart# */ {
 				this.realPic = this.chart.Bar( allData, this.options );
 			}
 			else if ( this._needRefreshChart ) {
+				//this.realPic.initialize(allData);
+				//this.realPic.update();
 				this.realPic.destroy();
 				this.realPic = this.chart.Bar( allData, this.options );
 				this._needRefreshChart = false;
