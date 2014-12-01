@@ -26,7 +26,16 @@
                 "content": {"<-": "@owner.barDatasets"},
                 "labels": {"<-": "@owner.barLabels"}
             }
-        }
+        },
+        "testSelect": {
+            "prototype": "digit/ui/select.reel",
+            "properties": {
+                "element": {"#": "testSelect"},
+                "contentController": {"@": "chartController"},
+                "labelPropertyName": "label",
+                "valuePropertyName": "fillColor"
+            }
+          }
      }
 
 
@@ -43,6 +52,8 @@
     <div class="Main-chartContainer">
         <div data-montage-id="barChart">
         </div>
+
+        <select data-montage-id="testSelect"></select>
 
     </div>
 

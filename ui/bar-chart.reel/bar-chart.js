@@ -167,6 +167,4 @@ exports.BarChart = Chartjs.specialize( /** @lends BarChart# */ {
 		}
 	}
 
-
-
 } );

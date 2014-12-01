@@ -176,8 +176,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 }
             ];
 
-            Object.observe(this.barDatasets,function(){
-               debugger
+            Object.observe(this.barDatasets, function () {
+                debugger
                 console.log("Datasets fill color has been changed.");
             });
 
@@ -185,9 +185,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var self = this;
             setTimeout(function () {
                 self.barLabels[1] = "TestLabel";
+                self.barDatasets[0].label = "TestLlllll";
                 self.barDatasets[0].data[0] = 96;
                 self.barDatasets[0].fillColor = "rgba(100,220,220,0.5)";
-                self.templateObjects.barChart.reDraw();
+                //self.templateObjects.barChart.reDraw();
 //
 //				self.templateObjects.chartController.content[0].label = 'New Label Test';
 //                self.templateObjects.chartController.content[0].fillColor="rgba(100,220,220,0.5)";
